@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Each thread has its own browser and each test its own context (see BrowserManager), so methods can run side by side. -->
+<suite name="MediCare+ UI" parallel="methods" thread-count="3">
+  <test name="Regression">
+    <packages>
+      <package name="com.practiceqa.medicare.tests"/>
+    </packages>
+  </test>
+</suite>

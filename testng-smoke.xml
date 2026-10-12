@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MediCare+ UI: smoke" parallel="methods" thread-count="3">
+  <test name="Smoke">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="com.practiceqa.medicare.tests"/>
+    </packages>
+  </test>
+</suite>
